@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Beer Explorer</title>
+</head>
+<body>
+    <header>
+        <h1>BEER PROJECT & THE FELLOWSHIP OF THE BEER</h1>
+    </header>
+    <main>
+        <h1>Beer Explorer</h1>
+        <div class="searchBox">
+          <div class="innerSearchBox">
+
+              <input type="text" id="searchInput" placeholder="Search...">
+              <button id="resetButton">Reset</button>
+            </div>
+            <div class="filter">
+                <label for="priceRange">Price Range:</label>
+                <input type="range" id="priceRange" min="0" max="100" value="100">
+                <span id="priceValue">$100</span>
+            </div>
+            <!-- SRM Slider -->
+            <div class="filter">
+                <label for="srmSlider">SRM:</label>
+                <input type="range" id="srmSlider" min="0" max="100" step="0.1" value="0">
+                <span id="srmValue">0</span>
+            </div>
+            <!-- pH Slider -->
+            <div class="filter">
+                <label for="phSlider">pH:</label>
+                <input type="range" id="phSlider" min="0" max="14" step="0.1" value="0">
+                <span id="phValue">0</span>
+            </div>
+        </div>
+        <div id="beerList"></div>
+        <div id="pagination">
+            <!-- <button id="prevPage">Previous</button> -->
+            <!-- Numeric page buttons will be added here -->
+            <!-- <button id="nextPage">Next</button> -->
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

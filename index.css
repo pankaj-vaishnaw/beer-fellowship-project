@@ -1,0 +1,218 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    
+}
+#beerList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Styles for beer cards */
+.beer-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    width: 250px;
+}
+
+.beer-image {
+    max-width: 100%; /* Ensure the image doesn't exceed the card width */
+    max-height: 200px; /* Define the maximum height for the image */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.searchBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Pagination styles (you can customize these) */
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pagination-button.active {
+    background-color: #0056b3;
+}
+
+/* Styling for Price Range Slider */
+#priceRange {
+    width: 40%;
+    margin: 10px 0;
+    background: #333; /* Change background color to dark grey */
+    height: 5px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+}
+
+#priceRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#priceRange::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Styling for SRM Slider */
+#srmSlider {
+    width: 40%;
+    margin: 10px 0;
+    background: #333; /* Change background color to dark grey */
+    height: 5px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+}
+
+#srmSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #2196F3;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#srmSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #2196F3;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Styling for pH Slider */
+#phSlider {
+    width: 50%;
+    margin: 10px 0;
+    background: #333; /* Change background color to dark grey */
+    height: 5px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+}
+
+#phSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #FF5722;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#phSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #FF5722;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Responsive styles (adjust breakpoints as needed) */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .beer-card {
+        font-size: 14px;
+    }
+}
